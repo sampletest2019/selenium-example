@@ -10,7 +10,7 @@ def test_ebay_search_motors(browser):
     base_url = 'https://www.ebay.com/'
     expected_title = 'Electronics, Cars, Fashion, Collectibles & More | eBay'
 
-
+    #navigate to Ebay Home Page
     browser.get(base_url)
     assert expected_title in browser.title
     assert base_url in browser.current_url
